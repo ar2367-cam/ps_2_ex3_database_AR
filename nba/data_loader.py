@@ -49,6 +49,11 @@ def kaggle_download_data(dataset: str) -> None:
     print(f"Data has been downloaded to {data_path}")
 
 
+# Click lets you turn a Python function into a terminal command
+# Lets you specify command line arguments and options for the function
+# Then it reads what the user typed and passes it to the function as arguments
+
+
 @click.command()  # type: ignore
 @click.option(  # type: ignore
     "--dataset",
